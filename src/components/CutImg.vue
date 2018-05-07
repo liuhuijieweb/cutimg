@@ -318,6 +318,7 @@
           this.rec.l = this.referPoint.x;
           this.rec.t = this.referPoint.y-h;
           this.rec.h = h;
+          this.ratio = this.rec.w / this.rec.h;
         }else if(this.action === 'drag-b'){
           h = y - (this.referPoint.y + this.pt);
           h = h >= elHeight - this.referPoint.y ? elHeight - this.referPoint.y : h;
@@ -327,6 +328,7 @@
           this.rec.l = this.referPoint.x;
           this.rec.t = this.referPoint.y;
           this.rec.h = h;
+          this.ratio = this.rec.w / this.rec.h;
         }else if(this.action === 'drag-l'){
           w = x - (this.referPoint.x + this.pl);
           w = w * -1 >= this.referPoint.x ? this.referPoint.x : w * -1;
@@ -336,6 +338,7 @@
           this.rec.l = this.referPoint.x-w;
           this.rec.t = this.referPoint.y;
           this.rec.w = w;
+          this.ratio = this.rec.w / this.rec.h;
         }else if(this.action === 'drag-r'){
           w = x - (this.referPoint.x + this.pl);
           w = w >= elWidth - this.referPoint.x ? elWidth - this.referPoint.x : w;
@@ -345,6 +348,7 @@
           this.rec.l = this.referPoint.x;
           this.rec.t = this.referPoint.y;
           this.rec.w = w;
+          this.ratio = this.rec.w / this.rec.h;
         }
         this.selectChange();
       },
@@ -422,7 +426,7 @@
         this.$resImg.setAttribute('style',
           `width:${w}px;height:${h}px;top:${t}px;left:${l}px;`)
       },
-      clip () { 
+      clip () {
         let rec = this.rec;
         if (!rec.w || !rec.h) {
           return

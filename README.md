@@ -15,4 +15,7 @@ npm run dev
 npm run build
 ```
 
+# 兼容性
+  ie10+
+
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
