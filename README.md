@@ -3,6 +3,10 @@
 > A Vue.js project
 > 支持缩放、左右拉伸 、拖动
 
+# Demo
+
+[Demo page](https://liuhuijieweb.github.io/index.html)
+
 ## Build Setup
 
 ``` bash
