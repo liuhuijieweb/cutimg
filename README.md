@@ -1,6 +1,7 @@
 # cut
 
 > A Vue.js project
+> 支持缩放、左右拉伸 、拖动
 
 ## Build Setup
 
