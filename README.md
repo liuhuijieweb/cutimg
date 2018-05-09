@@ -26,7 +26,7 @@ Vue.use(cutImg);
 
 <template>
 	<div id="app">
-		<cut_img></cut_img>
+		<cutimg></cutimg>
 	</div>
 </template>
 
