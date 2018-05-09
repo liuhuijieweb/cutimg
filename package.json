@@ -1,10 +1,13 @@
 {
-  "name": "cut",
+  "name": "cut-img",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "'liuhuijie' <'liuhuijie@hongyuangbang.net'>",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "main": "dist/cut_img.js",
+  "repository": { "type": "git", "url": "https://github.com/liuhuijieweb/cutimg" },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

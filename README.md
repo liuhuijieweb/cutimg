@@ -5,8 +5,32 @@
 
 # Demo
 
-[Demo page](https://liuhuijieweb.github.io/index.html)
+[Demo page](https://liuhuijieweb.github.io/cutimg/index.html)
 
+# Installation
+# npm
+
+```html
+$ npm install cut-img
+```
+
+
+# Requirements
+
+- [Vue.js](https://github.com/vuejs/vue) `^2.0.0`
+
+```html
+import cutImg from 'cut-img'
+Vue.use(cutImg);
+
+
+<template>
+	<div id="app">
+		<cut_img></cut_img>
+	</div>
+</template>
+
+```
 ## Build Setup
 
 ``` bash
@@ -22,5 +46,9 @@ npm run build
 
 # 兼容性
   ie10+
+
+# License
+
+[The MIT License](http://opensource.org/licenses/MIT)
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
