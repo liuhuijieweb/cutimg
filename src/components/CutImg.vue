@@ -52,6 +52,7 @@
 
 <script>
   export default {
+    name:'cutimg',
     data () {
       return {
         img: null,
